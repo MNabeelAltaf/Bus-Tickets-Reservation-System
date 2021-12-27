@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReservationSystemModelStoreContainer" CdmEntityContainer="ReservationSystemEntities2">
+    <EntitySetMapping Name="RegistrationProcesses">
+      <EntityTypeMapping TypeName="ReservationSystemModel.RegistrationProcess">
+        <MappingFragment StoreEntitySet="RegistrationProcess">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="First_Name" ColumnName="First Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReservationProcesses">
+      <EntityTypeMapping TypeName="ReservationSystemModel.ReservationProcess">
+        <MappingFragment StoreEntitySet="ReservationProcess">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Departure_City" ColumnName="Departure City" />
+          <ScalarProperty Name="Destination_City" ColumnName="Destination City" />
+          <ScalarProperty Name="Bus_Class" ColumnName="Bus Class" />
+          <ScalarProperty Name="Timing" ColumnName="Timing" />
+          <ScalarProperty Name="Account_Number" ColumnName="Account Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="ReservationSystemModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

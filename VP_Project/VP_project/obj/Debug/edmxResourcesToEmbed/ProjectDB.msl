@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectDBModelStoreContainer" CdmEntityContainer="ProjectDBEntities">
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="ProjectDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="First_Name" ColumnName="First Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table2">
+      <EntityTypeMapping TypeName="ProjectDBModel.Table2">
+        <MappingFragment StoreEntitySet="Table2">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Departure_City" ColumnName="Departure City" />
+          <ScalarProperty Name="Destination_City" ColumnName="Destination City" />
+          <ScalarProperty Name="Bus_Class" ColumnName="Bus Class" />
+          <ScalarProperty Name="Timing" ColumnName="Timing" />
+          <ScalarProperty Name="Account_Number" ColumnName="Account Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
